@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../src/css/styles.css">
+	<title>Higher or Lower: Instagram</title>
+</head>
+<body>
+	<main>
+		<div class="flex-container">
+			<div class="flex-default">
+				<div id="left-bg"></div>
+				<div class="info">
+					<img id="left-pfp" src="" alt="instagram-pfp">
+					<div class="info-text">
+						<p id="left-name"></p>
+						<p><span class="small-text">has</span></p>
+						<p><span class="followers" id="left-followers"></span></p>
+						<p><span class="small-text">Instagram Followers</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="flex-default">
+				<div id="right-bg"></div>
+				<div class="info">
+					<img id="right-pfp" src="" alt="instagram-pfp">
+					<div class="info-text">
+						<p id="right-name"></p>
+						<p><span class="small-text">has</span></p>
+						<p><span class="followers" id="right-followers"></span></p>
+						<button class="button1">
+							<p>Higher</p>
+							<p class="up-arrow">⮝</p>
+						</button>
+						<button class="button2">
+							<p>Lower</p>
+							<p class="down-arrow">⮟</p>
+						</button>
+						<p><span class="small-text">Instagram Followers</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="score" id="game-score" data-target="1">Score: 0</p>
+		<p class="versus">VS</p>
+		<p class="data">Data collected on 7/29/22</p>
+		<a class="website" href="https://ewbyf.github.io">❮ Back to website</a>
+		<div class="result-default lose">
+			<div class="lose-menu">
+				<a class="website" href="https://ewbyf.github.io">❮ Back to website</a>
+				<div class="lose-container">
+					<img src="../../img/x.jpg" alt="x-icon">
+					<p>You lost!</p>
+					<p class="score">Score: 0</p>
+					<button class="retry">Try Again</button>
+					<a class="logo" href="https://github.com/ewbyf">
+						<img src="../../img/github-logo.png" alt="github-logo">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="result-default win">
+			<img src="../img/checkmark.png" alt="x-icon">
+		</div>
+
+	</main>
+	<script type="module" src="../src/js/start.js"></script>
+	<script type="module" src="../src/js/buttons.js"></script>
+</body>
+</html>
