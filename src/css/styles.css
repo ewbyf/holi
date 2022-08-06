@@ -195,6 +195,7 @@ button {
 	width: 100vw;
 	height: 100vh;
 	display: none;
+	-webkit-backdrop-filter: blur(1rem);
 	backdrop-filter: blur(1rem);
 	z-index: 1;
 }
@@ -345,20 +346,26 @@ button {
 	}
 }
 
-@media (max-height: 690px) {
+@media (max-height: 690px) and (min-width: 951px) {
 	.info {
 		top: 10vh;
 	}
+}
+
+@media (max-height: 690px) {
 	.lose-container {
 		padding-top: 65px;
 		padding-bottom: 40px;
 	}
 }
 
-@media (max-height: 605px) {
+@media (max-height: 605px) and (min-width: 951px){
 	.info {
 		top: 2vh;
 	}
+}
+
+@media (max-height: 605px) {
 	.lose-container img {
 		height: 75px;
 		width: 75px;
