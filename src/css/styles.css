@@ -138,11 +138,11 @@ button {
 }
 
 .button1:hover .up-arrow{
-	top: -4px;
+	top: -6px;
 }
 
 .button2:hover .down-arrow{
-	bottom: -4px;
+	bottom: -6px;
 }
 
 #game-score {
