@@ -11,6 +11,11 @@
 
 body {
 	background-color: #202b3c;
+	height: 100%;
+}
+
+html, main {
+	height: 100%;
 }
 
 body:after {
@@ -27,13 +32,13 @@ body:after {
 .flex-container {
 	display: flex;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 }
 
 .flex-default {
 	display: flex;
 	justify-content: center;
-	width: 50vw;
+	width: 50%;
 }
 
 #left-bg, #right-bg {
@@ -46,12 +51,11 @@ body:after {
 	opacity: 0;
 }
 
-
 .info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	top: 21vh;
+	top: 21%;
 }
 
 .info img {
@@ -66,13 +70,10 @@ body:after {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 400px;
 }
 
 #left-name, #right-name {
-	display: inline-block;
-	word-wrap: break-word;
-	max-width: 400px;
+	max-width: 500px;
 }
 
 .info-text p {
@@ -193,7 +194,7 @@ button {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	display: none;
 	-webkit-backdrop-filter: blur(1rem);
 	backdrop-filter: blur(1rem);
@@ -279,6 +280,16 @@ button {
 	border-radius: 100px;
 }
 
+@media (max-width: 1100px) {
+	#left-name, #right-name {
+		font-size: 40px;
+	}
+
+	.followers {
+		font-size: 50px;
+	}
+}
+
 @media (max-width: 950px) {
 	body:after {
 		content:"";
@@ -308,6 +319,22 @@ button {
 	.info img {
 		margin-right: 80px;
 		left: 0%;
+	}
+
+	#left-name, #right-name {
+		font-size: 40px;
+	}
+
+	.followers {
+		font-size: 50px;
+	}
+
+	button {
+		padding: 11.5px 55px;
+	}
+	
+	.button1 p, .button2 p {
+		font-size: 16px;
 	}
 }
 
@@ -348,7 +375,7 @@ button {
 
 @media (max-height: 690px) and (min-width: 951px) {
 	.info {
-		top: 10vh;
+		top: 10%;
 	}
 }
 
@@ -361,7 +388,7 @@ button {
 
 @media (max-height: 605px) and (min-width: 951px){
 	.info {
-		top: 2vh;
+		top: 2%;
 	}
 }
 
