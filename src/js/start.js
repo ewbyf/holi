@@ -17,7 +17,7 @@ export function resetRight(rightIndex) {
 }
 
 export function start() {
-    var leftIndex = Math.floor(Math.random() * 200);
+    const leftIndex = Math.floor(Math.random() * 200);
     do {
         var rightIndex = Math.floor(Math.random() * 200);
     }

@@ -10,7 +10,7 @@ export function win() {
     document.getElementsByClassName("win")[0].style.display = "block";
 
     // Sets score
-    var nextScore = +document.getElementById("game-score").getAttribute("data-target");
+    const nextScore = +document.getElementById("game-score").getAttribute("data-target");
     document.getElementById("game-score").innerText = `Score: ${nextScore}`;
     document.getElementById("game-score").setAttribute("data-target", nextScore + 1);
 
